@@ -1,4 +1,4 @@
-pragma solidity 0.4.24;
+pragma solidity 0.8.0;
 
 import "chainlink/contracts/ChainlinkClient.sol";
 import "chainlink/contracts/vendor/Ownable.sol";
