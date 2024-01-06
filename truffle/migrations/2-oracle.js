@@ -14,10 +14,10 @@ module.exports = async (deployer, network, accounts) => {
       addrFile = path.join(__dirname, "..", "build", "addrs.env");
       break;
     case "mumbai":
-      addrFile = path.join(__dirname, "..", "build", "mumbai_addrs.env");
+      addrFile = path.join(__dirname, "..", "build", "addrs.env");
       break;
     default:
-      addrFile = path.join(__dirname, "..", "build", "default_addrs.env");
+      addrFile = path.join(__dirname, "..", "build", "addrs.env");
       break;
   }
 
@@ -31,4 +31,6 @@ module.exports = async (deployer, network, accounts) => {
     addrFile,
     `LINK_CONTRACT_ADDRESS=${LinkToken.address}\nORACLE_CONTRACT_ADDRESS=${Oracle.address}\n`
   );
+
+  return;
 };
