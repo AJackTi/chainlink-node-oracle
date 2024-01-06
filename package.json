@@ -1,7 +1,7 @@
 {
   "name": "chainlink-dev",
   "version": "1.0.0",
-  "description": "This project contains tooling for Chainlink development on Qtum and Ethereum.",
+  "description": "This project contains tooling for Chainlink development on Ganache and Mumbai.",
   "scripts": {
     "chainlink:logs": "docker logs chainlink-dev",
     "chainlink:start": "./chainlink/start-cl.sh",

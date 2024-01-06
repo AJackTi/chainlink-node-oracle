@@ -1,4 +1,5 @@
-pragma solidity 0.8.0;
+// SPDX-License-Identifier: MIT
+pragma solidity 0.4.24;
 
 import "chainlink/contracts/ChainlinkClient.sol";
 import "chainlink/contracts/vendor/Ownable.sol";

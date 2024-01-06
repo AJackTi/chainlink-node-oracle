@@ -8,7 +8,7 @@ module.exports = {
       provider: () =>
         new HDWalletProvider({
           mnemonic: process.env.MNEMONIC,
-          providerOrUrl: `https://rpc.ankr.com/polygon/${process.env.ANKR_APIKEY}`,
+          providerOrUrl: 'wss://polygon-mumbai-bor.publicnode.com	',
           addressIndex: 0,
           numberOfAddresses: 10,
         }),
@@ -19,7 +19,7 @@ module.exports = {
   },
   compilers: {
     solc: {
-      version: "0.8.0",
+      version: "0.4.24",
     },
   },
 };
