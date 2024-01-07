@@ -2318,7 +2318,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-01-06T13:59:27.165Z",
+  "updatedAt": "2024-01-07T06:20:49.398Z",
   "devdoc": {
     "methods": {
       "renounceOwnership()": {

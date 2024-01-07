@@ -7,19 +7,7 @@ let Oracle = artifacts.require("Oracle");
 module.exports = async (deployer, network, accounts) => {
   await deployer.deploy(LinkToken);
   await deployer.deploy(Oracle, LinkToken.address);
-  let addrFile;
-
-  switch (network) {
-    case "ganache":
-      addrFile = path.join(__dirname, "..", "build", "addrs.env");
-      break;
-    case "mumbai":
-      addrFile = path.join(__dirname, "..", "build", "addrs.env");
-      break;
-    default:
-      addrFile = path.join(__dirname, "..", "build", "addrs.env");
-      break;
-  }
+  let addrFile = path.join(__dirname, "..", "build", "addrs.env");
 
   try {
     fs.unlinkSync(addrFile);
@@ -31,6 +19,4 @@ module.exports = async (deployer, network, accounts) => {
     addrFile,
     `LINK_CONTRACT_ADDRESS=${LinkToken.address}\nORACLE_CONTRACT_ADDRESS=${Oracle.address}\n`
   );
-
-  return;
 };
